@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">BlogHub</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="create-post.html">Create Post</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to BlogHub</h1>
+        <p>Share your ideas with the world</p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search blogs..."
+        >
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-container" id="posts">
+
+        <div class="blog-card">
+            <img src="https://picsum.photos/400/250?1">
+
+            <div class="content">
+                <h2>Web Development</h2>
+
+                <p>
+                    Learn HTML, CSS and JavaScript with
+                    practical projects.
+                </p>
+
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://picsum.photos/400/250?2">
+
+            <div class="content">
+                <h2>React Guide</h2>
+
+                <p>
+                    Build modern web applications using React.
+                </p>
+
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://picsum.photos/400/250?3">
+
+            <div class="content">
+                <h2>Node.js Backend</h2>
+
+                <p>
+                    Create APIs and connect databases easily.
+                </p>
+
+                <button>Read More</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 BlogHub | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
