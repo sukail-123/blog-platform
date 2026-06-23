@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Blog</title>
+</head>
+<body>
+
+<h1>Create Blog</h1>
+
+<input
+type="text"
+id="title"
+placeholder="Blog Title">
+
+<br><br>
+
+<textarea
+id="content"
+placeholder="Blog Content">
+</textarea>
+
+<br><br>
+
+<button onclick="createPost()">
+Publish Blog
+</button>
+
+<script>
+
+function createPost(){
+
+    const title =
+    document.getElementById("title").value;
+
+    const content =
+    document.getElementById("content").value;
+
+    fetch("http://localhost:5000/posts",{
+
+        method:"POST",
+
+        headers:{
+            "Content-Type":"application/json"
+        },
+
+        body:JSON.stringify({
+            title,
+            content
+        })
+
+    })
+    .then(res=>res.json())
+    .then(data=>{
+
+        alert("Blog Published");
+
+        window.location.href="index.html";
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
